@@ -1,0 +1,4 @@
+framework module AppSyncRealTimeClient {
+  header "AppSyncRealTimeClient-Swift.h"
+  requires objc
+}
