@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AWSAppSync",
-            targets: ["AWSCore", "AWSAppSync", "AppSyncRealTimeClient", "SQLite", "Starscream"]),
+            targets: ["AWSCore", "AWSAppSync", "AppSyncRealTimeClient", "SQLite", "Starscream", "Reachability"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,5 +23,6 @@ let package = Package(
         .binaryTarget(name: "AppSyncRealTimeClient", path: "Frameworks/AppSyncRealTimeClient.xcframework"),
         .binaryTarget(name: "SQLite", path: "Frameworks/SQLite.xcframework"),
         .binaryTarget(name: "Starscream", path: "Frameworks/Starscream.xcframework"),
+        .binaryTarget(name: "Reachability", path: "Frameworks/Reachability.xcframework"),
     ]
 )
